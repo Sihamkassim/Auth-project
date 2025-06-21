@@ -62,10 +62,12 @@ This project supports user signup, login, email verification, password reset, an
    cd Auth-project
    
 2,Install dependencies:
+  ```bash
 npm install
 
 3,Create a .env file in the root directory and add the following environment variables:
 
+  ```bash
 PORT=8000
 MONGO_URL=your_mongodb_connection_string
 TOKEN_SECRET=your_jwt_secret
@@ -78,20 +80,34 @@ npm run dev
 
 5,The API will be available at http://localhost:8000/api
 
+---
+
 Project Structure Overview
+
+
 ├── controllers/          # Route handlers (authController, postController)
+
 ├── middlewares/          # Middleware (authentication, validation)
+
 ├── models/               # Mongoose models (User, Post)
+
 ├── routers/              # API route definitions (authRouter, postRouter)
+
 ├── utils/                # Utility functions (hashing, email, etc.)
+
 ├── index.js              # Entry point to initialize Express and routes
+
 ├── .env                  # Environment variables (not committed)
 
 
-Validation
-All inputs are validated using Joi schemas to ensure data integrity and security.
+---
+## Validation
 
-Security
+All inputs are validated using Joi schemas to ensure data integrity and security.
+---
+
+## Security
+
 Passwords are hashed with bcrypt before saving to the database.
 
 JWT tokens secure protected routes.
