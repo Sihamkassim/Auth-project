@@ -62,25 +62,26 @@ This project supports user signup, login, email verification, password reset, an
    cd Auth-project
    
 2,Install dependencies:
-  ```bash
-npm install
+  
+     npm install
 
 3,Create a .env file in the root directory and add the following environment variables:
 
-  ```bash
-PORT=8000
-MONGO_URL=your_mongodb_connection_string
-TOKEN_SECRET=your_jwt_secret
-NODE_CODE_SENDING_EMAIL_ADDRESS=your_email@gmail.com
-NODE_CODE_SENDING_EMAIL_PASSWORD=your_email_password_or_app_password
-HMAC_VERIFICATION_CODE_SECRET=your_hmac_secret
+  
+    PORT=8000
+    MONGO_URL=your_mongodb_connection_string
+    TOKEN_SECRET=your_jwt_secret
+    NODE_CODE_SENDING_EMAIL_ADDRESS=your_email@gmail.com
+    NODE_CODE_SENDING_EMAIL_PASSWORD=your_email_password_or_app_password
+    HMAC_VERIFICATION_CODE_SECRET=your_hmac_secret
 
 4,Start the server with nodemon (development):
-npm run dev
+
+        npm run dev
 
 5,The API will be available at http://localhost:8000/api
 
----
+
 
 Project Structure Overview
 
